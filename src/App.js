@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import Cor from './components/Cor'
+import Carro from './components/Carro'
+import Avaliacao from './components/avaliacao';
+import Relogio from './components/Relogio'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Cor cor="cinza"/>
+      <Carro />
+      <Avaliacao tema="Introdução a algoritmos" questoes={30} tempoTotal={180} peso={50}/>
+      <Relogio />
     </div>
+    
   );
 }
 
 export default App;
+
+
